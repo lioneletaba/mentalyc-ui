@@ -11,7 +11,7 @@ export const Archive = ({ className }: { className?: string }) => {
       <path
         d="M13.585 6.81348V12.6663C13.585 13.9995 13.2517 14.6661 11.5852 14.6661H5.58575C3.91924 14.6661 3.58594 13.9995 3.58594 12.6663V6.81348"
         stroke="#731054"
-        stroke-width="1.5"
+        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
