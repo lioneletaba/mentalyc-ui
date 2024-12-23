@@ -19,7 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { useState } from "react";
+import React, { useState } from "react";
 import { TableFilter } from "@/components/TableFilter";
 import { Container } from "@/components/Container";
 import { NewClient } from "@/components/NewClient";
