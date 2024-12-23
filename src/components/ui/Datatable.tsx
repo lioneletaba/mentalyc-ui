@@ -59,7 +59,7 @@ const ClientSelection = ({ table }: { table: any }) => {
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
               table.getColumn("clinician")?.setFilterValue(event.target.value)
             }
-            label="Select clinician"
+            label="Select clinician..."
           />
         </div>
         <div className="grow self-center max-sm:hidden">
