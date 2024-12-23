@@ -22,14 +22,15 @@ import {
 import { useState } from "react";
 import { TableFilter } from "../TableFilter";
 import { Container } from "../Container";
-import { Archive } from "../icons/archive";
 import { NewClient } from "../NewClient";
+import { Archive } from "../icons/Archive";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ClientSelection = ({ table }: { table: any }) => {
   const isTableEmpty = table.getRowModel().rows.length === 0;
   const tableSelectedElements = table.getFilteredSelectedRowModel().rows.length;

@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Logo } from "@/components/icons/logo";
+import { Logo } from "@/components/icons/Logo";
 import { cn } from "@/lib/utils";
-import { Notes } from "@/components/icons/notes";
-import { Info } from "@/components/icons/info";
-import { Down } from "@/components/icons/down";
+import { Notes } from "@/components/icons/Notes";
+import { Info } from "@/components/icons/Info";
+import { Down } from "@/components/icons/Down";
 import { Button } from "@/components/ui/button";
 import { Badge } from "../Badge";
 

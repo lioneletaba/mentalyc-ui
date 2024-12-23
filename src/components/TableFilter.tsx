@@ -1,5 +1,5 @@
 import { Input } from "./ui/input";
-import { Down } from "./icons/down";
+import { Down } from "./icons/Down";
 import React from "react";
 
 type Props = {

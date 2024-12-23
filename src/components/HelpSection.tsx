@@ -1,4 +1,4 @@
-import { Help } from "./icons/help";
+import { Help } from "./icons/Help";
 
 export const HelpSection = () => {
   return (
