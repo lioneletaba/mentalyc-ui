@@ -20,10 +20,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useState } from "react";
-import { TableFilter } from "../TableFilter";
-import { Container } from "../Container";
-import { NewClient } from "../NewClient";
-import { Archive } from "../icons/Archive";
+import { TableFilter } from "@/components/TableFilter";
+import { Container } from "@/components/Container";
+import { NewClient } from "@/components/NewClient";
+import { Archive } from "@/components/icons/Archive";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
