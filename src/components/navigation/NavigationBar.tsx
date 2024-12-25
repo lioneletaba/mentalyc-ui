@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 import { Notes } from "@/components/icons/Notes";
 import { Info } from "@/components/icons/Info";
 import { Down } from "@/components/icons/Down";
-import { Button } from "@/components/ui/button";
 import { Badge } from "../Badge";
+import { Button } from "../ui/Button";
 
 const NavLink = ({
   text,
@@ -83,7 +83,7 @@ export const NavigationBar: React.FC = () => {
           <Badge type="pro" className=" capitalize" />
         </div>
 
-        <div className="h-full max-sm:hidden">
+        <div className="h-full max-lg:hidden">
           <ul className=" list-none flex items-stretch gap-8 h-full justify-between">
             {navLinks.map((link, index) => (
               <NavLink key={index} text={link.text} active={link.active} />

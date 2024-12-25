@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import {
   Dialog,
   DialogContent,
@@ -7,19 +7,19 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "./ui/label";
-import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
-import { Badge } from "./Badge";
+} from "@/components/ui/Dialog";
+import { Input } from "@/components/ui/Input";
+import { Label } from "../ui/Label";
+import { RadioGroup, RadioGroupItem } from "../ui/RadioGroup";
+import { Badge } from "../Badge";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
-import { Switch } from "./ui/switch";
+} from "../ui/Select";
+import { Switch } from "../ui/Switch";
 
 const diagnosis = [
   "F43.22 - Adjustment disorder with anxiety",
@@ -38,10 +38,10 @@ export function NewClient() {
       </DialogTrigger>
       <DialogContent className="w-dialog-content bg-white rounded-lg">
         <DialogHeader>
-          <DialogTitle className="grid place-items-center">
+          <DialogTitle className="grid text-black text-heading-4 place-items-center">
             Add new client
           </DialogTitle>
-          <DialogDescription className="grid place-items-center text-center">
+          <DialogDescription className="grid place-items-center text-gray-400 text-center">
             This client information is essential for generating detailed client
             documents
           </DialogDescription>

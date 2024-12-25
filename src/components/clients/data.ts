@@ -1,4 +1,4 @@
-import { Client } from "./columns";
+import { Client } from "./Columns";
 
 export const clients: Client[] = [
   {

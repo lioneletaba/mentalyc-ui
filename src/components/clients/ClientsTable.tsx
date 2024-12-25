@@ -1,19 +1,17 @@
-import { ClientStateSwitch } from "../clientsSwitch";
-import { Container } from "../Container";
-import { ClientsDataTable } from "./ClientsDataTable";
+import { DataTable } from "@/components/clients/DataTable";
+import { Client, columns } from "./Columns";
+import { clients } from "./data";
+import { useState } from "react";
 
-export const ClientsTable = () => {
+function getData(): Client[] {
+  return clients;
+}
+
+export function ClientsDataTable() {
+  const [clients, setClients] = useState<Client[]>(getData());
   return (
-    <section className="my-6">
-      <Container>
-        <div className=" mb-4">
-          <h4 className=" text-heading-4 text-black">Clients</h4>
-        </div>
-      </Container>
-      <Container>
-        <ClientStateSwitch />
-      </Container>
-      <ClientsDataTable />
-    </section>
+    <div className="container mx-auto pb-4">
+      <DataTable columns={columns} data={clients} />
+    </div>
   );
-};
+}

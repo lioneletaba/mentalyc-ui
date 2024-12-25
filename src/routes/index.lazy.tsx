@@ -1,10 +1,10 @@
-import { ClientsTable } from "@/components/clients/ClientsTable";
+import { Clients } from "@/components/clients/Clients";
 import { createLazyFileRoute } from "@tanstack/react-router";
 
 const Index = () => {
   return (
     <div>
-      <ClientsTable />
+      <Clients />
     </div>
   );
 };

@@ -18,11 +18,11 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/components/ui/Table";
 import React, { useState } from "react";
-import { TableFilter } from "@/components/TableFilter";
+import { TableFilter } from "@/components/clients/TableFilter";
 import { Container } from "@/components/Container";
-import { NewClient } from "@/components/NewClient";
+import { NewClient } from "@/components/clients/NewClient";
 import { Archive } from "@/components/icons/Archive";
 
 interface DataTableProps<TData, TValue> {
@@ -59,7 +59,7 @@ const ClientSelection = ({ table }: { table: any }) => {
             onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
               table.getColumn("clinician")?.setFilterValue(event.target.value)
             }
-            label="Select clinician..."
+            label="Select clinician"
           />
         </div>
         <div className="grow self-center max-sm:hidden">
@@ -117,9 +117,9 @@ export function DataTable<TData, TValue>({
           🙁 Oops! No matches found. Please double-check your input.
         </div>
       ) : (
-        <div className="rounded-lg bg-white max-h-96 relative overflow-auto">
+        <div className="rounded-lg bg-white max-h-96 relative overflow-auto custom-scrollbar">
           <Table>
-            <TableHeader className="sticky top-0">
+            <TableHeader className="sticky top-0 bg-white">
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow className="border-gray-100 " key={headerGroup.id}>
                   {headerGroup.headers.map((header) => {
