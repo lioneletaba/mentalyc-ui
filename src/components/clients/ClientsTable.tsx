@@ -8,7 +8,8 @@ function getData(): Client[] {
 }
 
 export function ClientsDataTable() {
-  const [clients, setClients] = useState<Client[]>(getData());
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [clients, _setClients] = useState<Client[]>(getData());
   return (
     <div className="container mx-auto pb-4">
       <DataTable columns={columns} data={clients} />
