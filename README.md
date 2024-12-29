@@ -2,6 +2,10 @@
 
 This is the repository of the Mock UI of the Mentaly application UI.
 
+# Project Stack
+
+The project is built using ReactJs with TailwindCSS for components styling, and uses Storybook for the components documentation.
+
 # UI / UX Improvements suggestions
 
 Here are a few UI/UX improvements suggestions after looking at the design and building this implementation

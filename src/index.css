@@ -61,7 +61,6 @@
 
 @theme {
   /* Colors */
-  /* Solid */
   --color-danger-500: #f3404f;
 
   --color-kenyan-copper-100: #ffead5;
@@ -72,11 +71,11 @@
 
   --color-black: #040404;
 
+  --color-gray-50: #f5f5f5;
   --color-gray-100: #ebebeb;
   --color-gray-200: #e0e0e0;
   --color-gray-300: #c2c2c2;
   --color-gray-400: #8f8f8f;
-  --color-gray-50: #f5f5f5;
   --color-gray-500: #707070;
 
   --color-success-100: #d5f6de;
@@ -89,7 +88,6 @@
 
   --color-valhalla-100: #efeafd;
 
-  /* Gradients */
 
   /* Typography */
   /* Fonts */
@@ -130,11 +128,9 @@
 }
 
 @utility bg-primary-gradient {
-  background: linear-gradient(
-    90deg,
-    var(--color-primary-500) 0%,
-    var(--color-primary-300) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--color-primary-500) 0%,
+      var(--color-primary-300) 100%);
 }
 
 @utility container {
